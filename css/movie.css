@@ -1,0 +1,31 @@
+.container{
+    width: 802px !important;
+    height: auto;
+    border: 2px solid rgb(73, 73, 73);
+    border-radius: 5px; 
+}
+.segment{
+    padding: 0px 5px;
+}
+.Trailer1:link,
+.Trailer1:visited,
+.Trailer2:link,
+.Trailer2:visited,
+.download__link:link,
+.download__link:visited{
+    color: rgba(0, 0, 0, 0.787); 
+    border: 2px solid rgb(34, 34, 34);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 2rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.26);
+}
+
+.links:hover{
+    background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.74), rgba(0, 47, 255, 0.712));
+    color: #fff !important;
+    transition: all .8s;
+}

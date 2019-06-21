@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <link  href="./index.html">
+
+    <link rel="stylesheet" type="text/css" href="css/movie.css">
+    
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    
+    
+    
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    
+    <!--Semantic UI-->
+    <link rel="stylesheet" href="./Semantic-UI-CSS-master/semantic.css">
+    <script src="./Semantic-UI-CSS-master/semantic.js"></script>
+
+</head>
+<body>
+    <div class="ui secondary pointing menu">
+        <a class="item" href="./index.html">
+            Home
+        </a>
+        <a class="item" href="./movies.html">
+            Movies
+        </a>
+        <a class="item ">
+            Series
+        </a>
+        <a class="item">
+            About
+        </a>
+        
+    </div>
+
+    <div class="ui container " id="captain_marvel">
+        <img class="ui huge fluid bordered image" src="./img/captain-marvel-2019-10k-ym-1280x720.jpg" alt="Captain-Marvel">
+
+        <div class="segment">
+            <h1>Captain-Marvel</h1>
+            <p> <b> Description:-</b> Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle
+            between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S.
+            Air Force pilot Carol Danvers. With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while
+            harnessing her special superpowers to end the war with the evil Skrulls.</p>
+            <h1>Ratings:-</h1>
+            <p> <b>IMDB: 7/10</b> </p>
+            <p> <b>ROTTEN TOMATOES: 78%</b> </p>
+            <p> <b>COMMAN SENSE MEDIA: 4/5</b> </p>
+                <div class="trailers">
+                    <h1>Watch Trailers:-</h1>
+                    <a href="#" class="Trailer1 links">Trailer 1</a>
+                    <a href="#" class="Trailer2 links">Trailer 2</a>
+                </div>
+                <div class="download__part">
+                    <h1>Download from here:-</h1>
+                    <a href="#" class="download__link links">Download</a>
+                    
+                </div>
+            
+        </div> 
+
+        
+    </div>
+   
+    <script>
+            $('.ui.menu')
+            .on('click', '.item', function () {
+                if (!$(this).hasClass('ui')) {
+                $(this)
+                    .addClass('active')
+                    .siblings('.item')
+                    .removeClass('active');
+                }
+        });
+    </script>
+</body>
+</html>
