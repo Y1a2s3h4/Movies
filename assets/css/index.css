@@ -1,53 +1,64 @@
-*{
-    margin: 0 !important;
-    padding:.3rem;
-}/*
+* {
+  margin: 0 !important;
+  padding: 0.3rem;
+} /*
 body{
      position: relative; 
 }*/
-.navbar{
-    text-transform: uppercase;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 97.4%;
-    height:2.9rem;
-    line-height: .4rem;
-}
-.brand-name{
-    letter-spacing: 10px;
 
+.bg__img {
+  padding: 0 !important;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/captain-marvel-2019-10k-ym-1920x1080.jpg) !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-attachment: fixed !important;
+  height: 97vh;
 }
-nav .nav-up  a:link,
-nav .nav-up  a:visited{
-    color: rgb(236, 224, 224);
-    /* padding: .9rem; */
-    /* display: flex; */
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: all .3s;
+.navbar {
+  text-transform: uppercase;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 97.4%;
+  height: 2.9rem;
+  line-height: 0.4rem;
+}
+.brand-name {
+  letter-spacing: 10px;
+}
+nav .nav-up a:link,
+nav .nav-up a:visited {
+  color: rgb(236, 224, 224);
+  /* padding: .9rem; */
+  /* display: flex; */
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 nav .btn-sign-in:link,
-nav .btn-sign-in:visited{
-    margin-left: 75rem !important;
+nav .btn-sign-in:visited {
+  margin-left: 75rem !important;
 }
 .btn-sign-up:link,
-.btn-sign-up:visited{
-
-    margin-left: 2.7rem !important;
+.btn-sign-up:visited {
+  margin-left: 2.7rem !important;
 }
-.btn{
-    font-size: 1rem !important;
-    
-    border: 2px solid #fff;
-    border-radius: 3rem;
-    padding: .5rem 2rem;
+.btn {
+  font-size: 1rem !important;
 
-
+  border: 2px solid #fff;
+  border-radius: 3rem;
+  padding: 0.5rem 2rem;
 }
-.btn:hover{
-    background-color: #fff;
-    color: #000 !important;
+.btn:hover {
+  background-color: #fff;
+  color: #000 !important;
 }
 
 /* nav a:hover{
@@ -55,51 +66,332 @@ border-bottom: 2px solid rgba(229, 255, 0, 0.835);
 
 } */
 .brand-name:hover,
-.menu>a:hover{
-    color: rgb(255, 255, 255) !important;
+.menu > a:hover {
+  color: rgb(255, 255, 255) !important;
+}
+.menu a {
+  position: relative;
+  top: -0.8rem;
+  left: -0.7rem;
+  color: rgb(236, 224, 224);
+  padding: 0.9rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.form-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 300%);
+  outline: none;
+}
+.heading-primary {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5rem !important;
+}
+div .input-field {
+  height: 2.9rem;
+  padding: 0 2rem;
+  width: 45rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s;
+}
+div .input-field:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.8);
+}
+div .input-field:focus {
+  transform: translateY(0);
+  outline: 0;
+  box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.5);
+}
+.latest__trends {
+  width: 99.6%;
+  position: relative;
+  left: 0.2rem;
+  text-transform: uppercase;
+  padding: 0.3rem;
+  background-color: #f7f7f7;
+  margin: -1.4vh 0 0 0 !important;
+  text-align: center;
+}
+.img {
+  width: 300px;
+}
+.row {
+  margin-left: 20rem !important;
+}
+.col-1-of-4 {
+  color: rgb(0, 0, 0);
+  width: calc((99.6% - 3 * 4rem) / 4);
+}
+
+.img {
+  /*  To contain the image to the confines of the div  */
+  max-width: 100%;
+}
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover{
+  
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* .img1:hover .a1,
+.img2:hover .a2,
+.img3:hover .a3,
+.img4:hover .a4{
+  left: 20.5%;
+  
+  transition: all .2s ;
+} */
+.row > div {
+  max-width: 100%;
+  width: 18.75rem;
+  padding: 0 !important;
+  border-radius: 3px !important;
+  overflow: hidden;
+}
+
+.row > .img1:hover::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  margin-top: -27.5rem;
+  margin-left: 0.5rem;
+  height: 27.2rem;
+  width: 17.9rem;
+  content: "";
+}
+.row > .img2:hover::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  margin-top: -27.5rem;
+  margin-left: 0.5rem;
+  height: 27.2rem;
+  width: 17.9rem;
+  content: "";
+}
+.row > .img3:hover::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  margin-top: -27.5rem;
+  margin-left: 0.5rem;
+  height: 27.2rem;
+  width: 17.9rem;
+  content: "";
+}
+.row > .img4:hover::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+  margin-top: -27.5rem;
+  margin-left: 0.5rem;
+  height: 27.2rem;
+  width: 17.9rem;
+  content: "";
+}
+.a1:link,
+.a1:visited {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60%;
+  left: 20.5%;
+  font-size: 1.2rem !important;
+  z-index: 100;
+  text-decoration: none;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 6.25rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transition-duration: 0.3s  !important;
+}
+
+.img1:hover .a1 {
+  opacity: 1;
+}
+.a1:hover {
+  border: 3px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+
+.a2:link,
+.a2:visited {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60%;
+  left: 36.5%;
+  font-size: 1.2rem !important;
+  z-index: 100;
+  text-decoration: none;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 6.25rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transition-duration: 0.3s linear ease-in  !important;
+}
+
+.img2:hover .a2 {
+  opacity: 1;
+}
+.a2:hover {
+  border: 3px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+.a3:link,
+.a3:visited {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60%;
+  left: 52.5%;
+  font-size: 1.2rem !important;
+  z-index: 100;
+  text-decoration: none;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 6.25rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transition-duration: 0.3s linear ease-in  !important;
+}
+
+.img3:hover .a3 {
+  opacity: 1;
+}
+.a3:hover {
+  border: 3px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+
+.a4:link,
+.a4:visited {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 60%;
+  left: 68.5%;
+  font-size: 1.2rem !important;
+  z-index: 100;
+  text-decoration: none;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 6.25rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transition-duration: 0.9s linear ease-in  !important;
+}
+
+.img4:hover .a4 {
+  opacity: 1;
+}
+.a4:hover {
+  border: 3px solid rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+.popup {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__content{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
 
 }
- .menu a{
-     position: relative;
-     top:-.8rem;
-     left: -.7rem;
-    color: rgb(236, 224, 224);
-    padding: .9rem;
-    display: inline-block;
-    font-size: 1.3rem;
-    text-decoration: none;
-    transition: all .3s;
+.popup__content {
+  width: 35%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.25);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: table;
+  line-height: 3rem;
+  transition: all 0.3s 0.4s;
 }
-.bg-img {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/captain-marvel-2019-10k-ym-1920x1080.jpg) !important;
-    height: 95vh;
+.popup__img {
+  width: 90%;
 }
-.form-group{
-     position: fixed;
-     top: 50%;
-     left:50%;
-     transform: translate(-50%,-120%);
-     outline: none;
-     transition: all .2s;
+.popup__left {
+  display: table-cell;
+  width: 40%;
 }
-.heading-primary{
-    color: rgb(255, 255, 255);
-    margin-bottom: .5rem !important;
+.popup__right {
+  width: 60%;
+  vertical-align: middle;
+  display: table-cell;
+  margin-top: -1rem !important;
 }
-div .input-field{
-     height: 2.9rem;
-     padding: 0 2rem;
-     width: 45rem;
-     border-radius: .4rem;
+.download__btn:link,
+.download__btn:visited {
+  color: #000;
+  padding: 0.7rem 2rem;
+  border: 2px solid #000;
+  border-radius: 6.25rem;
+  margin: 1rem 0 !important;
+  transition: all 0.3s;
 }
-div .input-field:hover{
-    transform: translateY(-2px);
-    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.8);
 
+.download__btn:hover {
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.popup__close:link,
+.popup__close:visited {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.829);
+  position: absolute;
+  top: -0.6rem;
+  right: 0.6rem;
+  display: inline-block;
+}
+.popup__close:hover {
+  text-decoration: none;
+  color: rgb(134, 33, 250);
+}
+::selection{
+  background-color: rgba(134, 33, 250, 0.719);
 
 }
-div .input-field:focus{
-    transform: translateY(0);
-    outline: 0;
-    box-shadow: 0px 22px 50px rgba(0, 0, 0, 0.5);
-}
+/* 
+ */
+
+/* */
