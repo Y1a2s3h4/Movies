@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: radial-gradient( rgb(228, 222, 222), rgb(14, 161, 246));
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+.main__card{
+    text-transform: uppercase;
+    background-color: rgb(233, 236, 240);
+    box-shadow: 0 1rem 2rem rgba(14, 161, 246, 0.651);
+}
+.line{
+    width: 11rem;
+    height: 3px;
+    background:rgba(0, 0, 0, 0.822);
+    margin-bottom: 3rem;
+}
+.card-title{
+    font-size: 1.5rem;
+    letter-spacing: 7px;
+}
+.user-input{
+    border-radius: 2rem;
+    color: inherit;
+    border: none;
+    border: 3px solid transparent;
+
+}
+.user-input,
+.pass-input{
+    padding: 1.5rem 1.5rem;
+
+}
+.user-input:focus,
+.pass-input:focus:invalid{
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
+    border: 3px solid rgba(81, 255, 0, 0.65);
+}
+.user-input:focus:invalid,
+.pass-input:focus:invalid{
+    border: 3px solid rgba(255, 81, 0, 0.65);
+    
+}
+.pass-input{
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+}
+
+.margin__left--medium{
+    margin-left: 9rem;
+}
+.margin__left--large{
+    margin-left: 5rem;
+}
+.margin__bottom--small{
+    margin-bottom: .7rem;
+}
+.margin__bottom--medium{
+    margin-bottom: 1.5rem;
+}
+label{
+    margin-left: 9.8rem !important;
+
+}
+.Sign-in__btn:link,
+.Sign-in__btn:visited {
+  color: rgb(81,84,87);
+  padding: 0.7rem 2rem;
+  border: 2px solid #000;
+  border-radius: 6.25rem;
+  transition: all 0.3s;
+}
+
+.Sign-in__btn:hover {
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
